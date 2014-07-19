@@ -63,7 +63,7 @@ intervalDat[intervalDat$steps == max(intervalDat$steps),"interval"]
 ```
 
 
-## Inputing missing values
+## Imputing missing values
 
 Create a dataset with filled in missing values. Our strategy for filling these
 is to replace the NA's with the means of the intervals found in existing values.

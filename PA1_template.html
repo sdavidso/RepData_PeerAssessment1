@@ -97,8 +97,8 @@ plot(intervalDat$interval, intervalDat$steps, type=&quot;l&quot;, xlab = &quot;5
 <pre class="r"><code>intervalDat[intervalDat$steps == max(intervalDat$steps),&quot;interval&quot;]</code></pre>
 <pre><code>## [1] 835</code></pre>
 </div>
-<div id="inputing-missing-values" class="section level2">
-<h2>Inputing missing values</h2>
+<div id="imputing-missing-values" class="section level2">
+<h2>Imputing missing values</h2>
 <p>Create a dataset with filled in missing values. Our strategy for filling these is to replace the NA’s with the means of the intervals found in existing values.</p>
 <pre class="r"><code>dataN &lt;- read.csv(&quot;activity.csv&quot;,stringsAsFactors = FALSE)
 dataN$date &lt;- as.Date(dataN$date, &quot;%Y-%m-%d&quot;)
